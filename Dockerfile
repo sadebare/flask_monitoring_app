@@ -19,5 +19,6 @@ ENV FLASK_RUN_HOST=0.0.0.0
 #expose port 5000
 EXPOSE 5000
 
+
 #start the flask app
 CMD ["flask", "run"]

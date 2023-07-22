@@ -23,5 +23,5 @@ jobs:
           username: ${{ secrets.ACR_USERNAME }}
           password: ${{ secrets.ACR_PASSWORD }}
       - run: |
-          docker build . -t cmonitoringapp.azurecr.io/flaskapp:${{ github.sha }}
-          docker push monitoringapp.azurecr.io/k8sdemo:${{ github.sha }}
+          docker build . -t cmonitoringapp.azurecr.io/flaskapp:${{ github.run_number }}
+          docker push monitoringapp.azurecr.io/flaskapp:${{ github.run_number }}
